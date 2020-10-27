@@ -9,6 +9,8 @@ type QuestionCardProps = {
     totalQuestions: number;
 
 }
+
+
 export const QuestionCard: React.FC<QuestionCardProps> = ({
     question,
     answers,
@@ -22,13 +24,13 @@ export const QuestionCard: React.FC<QuestionCardProps> = ({
         </p>
         <p dangerouslySetInnerHTML={{__html: question}}></p>     
         <div>
-            {/* {answers.map(answer =>(
+            {answers.map(answer =>(
                 <div>
                     <button disabled={userAnswer} onClick={callback}>
                     <span dangerouslySetInnerHTML={{__html: answer }} />
                     </button>
                 </div>
-            ))} */}
+            ))}
         </div> 
     </div>
 
